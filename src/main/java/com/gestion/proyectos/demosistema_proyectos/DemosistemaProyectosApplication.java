@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(
-    // Dile a Spring dónde escanear componentes (@Service, @Controller, etc.)
+    
     scanBasePackages = { "com.gestion.proyectos" }
 )
-// Dile a Spring dónde están las entidades JPA y embeddables
-@EntityScan(basePackages = { "com.gestion.proyectos.model" })
-// Si luego agregas repositorios, que los busque aquí también
+
+@EntityScan(basePackages = { "com.gestion.proyectos.sistema_proyectos.model" })
+
 @EnableJpaRepositories(basePackages = { "com.gestion.proyectos" })
 public class DemosistemaProyectosApplication {
 

@@ -1,7 +1,8 @@
 package com.gestion.proyectos.controller;
 
-import com.gestion.proyectos.model.entity.Proyecto;
 import com.gestion.proyectos.repository.ProyectoRepository;
+import com.gestion.proyectos.sistema_proyectos.model.entity.Proyecto;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,13 +17,13 @@ public class ProyectoController {
         this.proyectoRepository = proyectoRepository;
     }
 
-    // ✅ GET /api/proyectos
+    
     @GetMapping
     public List<Proyecto> listar() {
         return proyectoRepository.findAll();
     }
 
-    // ✅ POST /api/proyectos
+    
     @PostMapping
     public Proyecto crear(@RequestBody Proyecto proyecto) {
         return proyectoRepository.save(proyecto);

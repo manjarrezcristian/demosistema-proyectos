@@ -1,8 +1,9 @@
-package com.gestion.proyectos.model.entity;
+package com.gestion.proyectos.sistema_proyectos.model.entity;
 
-import com.gestion.proyectos.model.embeddable.ContactoCliente;
-import com.gestion.proyectos.model.enums.EstadoProyecto;
-import com.gestion.proyectos.model.enums.Prioridad;
+import com.gestion.proyectos.sistema_proyectos.model.embeddable.ContactoCliente;
+import com.gestion.proyectos.sistema_proyectos.model.enums.EstadoProyecto;
+import com.gestion.proyectos.sistema_proyectos.model.enums.Prioridad;
+
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

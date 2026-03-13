@@ -1,4 +1,4 @@
-package com.gestion.proyectos.model.embeddable;
+package com.gestion.proyectos.sistema_proyectos.model.embeddable;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;
